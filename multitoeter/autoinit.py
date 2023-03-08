@@ -41,7 +41,8 @@ def __init_mastodon():
     if __check_none_set(cfg):
         return None
 
-    if missing := __check_all_set(cfg):
+    missing = __check_all_set(cfg)
+    if missing:
         [print(f'Missing config parameter for Mastodon: {v}') for v in missing]
         print('WARN: Disabled Mastodon due to missing config parameters')
         return None
@@ -60,7 +61,8 @@ def __init_twitter():
     if __check_none_set(cfg):
         return None
 
-    if missing := __check_all_set(cfg):
+    missing = __check_all_set(cfg)
+    if missing:
         [print(f'Missing config parameter for Twitter: {v}') for v in missing]
         print('WARN: Disabled Twitter due to missing config parameters')
         return None
