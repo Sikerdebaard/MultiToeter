@@ -16,7 +16,7 @@ setup(
     long_description_content_type="text/markdown",
     author='Thomas Phil',
     author_email='thomas@tphil.nl',
-    url='https://github.com/Sikerdebaard/multitoeter',
+    url='https://github.com/Sikerdebaard/MultiToeter',
     python_requires=">=3.7",
     packages=find_packages(),  # same as name
     install_requires=[
