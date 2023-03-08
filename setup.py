@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='multitoeter',
-    version='1',
+    version='2',
     description='Send out messages to Mastodon and Twitter using one simplistic unified API',
     long_description=long_description,
     long_description_content_type="text/markdown",
